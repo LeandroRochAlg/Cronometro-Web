@@ -44,7 +44,6 @@ btnPausar.addEventListener('click', () => {
     if(contando===true){
         clearInterval(idContagem);                          //Pausa o cronômetro
         btnPausar.innerText = 'Retomar Cronômetro';         //Altera o texto do botão
-        btnRetomar = document.querySelector('#btnPausar');  //Seleciona o botão de retomada
         contando = false;                                   //Altera a variável de controle
     }else if(contando===false){
         idContagem = setInterval(mostraCronometro, 100);    //Retoma o cronômetro
